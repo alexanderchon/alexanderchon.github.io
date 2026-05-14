@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionX Runway — Alexander Chon</title>
+  <meta name="description"
+    content="Alexander Chon's work with FashionX Stanford — including 'Carved in Jade,' a 2026 runway look exploring identity, restraint, and revelation.">
+  <link rel="icon" type="image/jpeg" href="assets/A.jpg">
+  <link rel="stylesheet" href="https://use.typekit.net/mcn5ibk.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fashionx.css">
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <a href="index.html?nosplash=1" class="logo">Alexander Chon</a>
+    <nav>
+      <a href="about.html">about</a>
+      <a href="index.html?nosplash=1#work">work</a>
+      <a href="index.html?nosplash=1#contact">contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main id="fx-main">
+
+    <!-- ===== HERO ===== -->
+    <section class="fx-hero">
+      <div class="fx-hero-img-wrap">
+        <img src="assets/jade4.jpg" alt="FashionX Runway — Carved in Jade" class="fx-hero-img">
+        <div class="fx-hero-overlay"></div>
+      </div>
+      <div class="fx-hero-content">
+        <h1 class="fx-hero-title">
+          <em class="fx-hero-title-em">FashionX</em> Runway
+        </h1>
+      </div>
+      <div class="fx-scroll-hint"><span>↓</span></div>
+    </section>
+
+    <!-- ===== ABOUT FASHIONX ===== -->
+    <section class="fx-about">
+      <div class="fx-about-inner">
+
+        <div class="fx-about-lead-row">
+          <p class="fx-about-lead">Runway is Stanford's annual student-run fashion show — one of the largest
+            student-produced events on campus, bringing together designers, stylists, models, and creatives for a
+            single night of original work.</p>
+          <img src="assets/fashionx.jpg" alt="FashionX logo" class="fx-about-logo">
+        </div>
+
+        <p class="fx-about-sub">Each year, designers are given a theme and full creative latitude. The result is a
+          diverse collection of student-made looks that range from conceptual to couture-adjacent — all built from
+          scratch, often by people with no formal fashion training.</p>
+
+      </div>
+    </section>
+
+    <!-- ===== CARVED IN JADE — SECTION HEADER ===== -->
+    <section class="fx-collection-header">
+      <div class="fx-collection-header-inner">
+        <span class="fx-section-tag">2026 — The Mirror Stage</span>
+        <h2 class="fx-collection-name"><em>Carved in Jade</em></h2>
+      </div>
+    </section>
+
+    <!-- ===== THE LOOK — VIDEO + PHOTO ===== -->
+    <section class="fx-look fx-look--jade">
+      <div class="fx-look-inner">
+
+        <!-- Left: runway video -->
+        <div class="fx-look-main fx-look-main--video">
+          <video src="assets/jadevid.mov" autoplay muted loop playsinline class="fx-look-video"></video>
+        </div>
+
+        <!-- Right: stacked photos -->
+        <div class="fx-look-side">
+          <div class="fx-look-side-img-wrap">
+            <img src="assets/jaderunway.jpg" alt="Carved in Jade — runway" class="fx-look-side-img">
+          </div>
+          <div class="fx-look-side-img-wrap">
+            <img src="assets/fashion-show-2.jpg" alt="Carved in Jade — show" class="fx-look-side-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== THEME + DESIGN TEXT ===== -->
+    <section class="fx-text">
+      <div class="fx-text-inner">
+
+        <div class="fx-text-col">
+          <span class="fx-section-tag">The Theme</span>
+          <blockquote class="fx-quote">"The Mirror Stage"</blockquote>
+          <p class="fx-body-text">This year's theme took a deep dive into the theories of Jacques Lacan — using
+            concepts of self-reflection, identity formation, and the gaze as a creative spark. The historic venue
+            provided a moody, cinematic backdrop for a night that pushed the boundaries of student-led fashion.</p>
+        </div>
+
+        <div class="fx-text-col">
+          <span class="fx-section-tag">The Look</span>
+          <p class="fx-body-text fx-body-text--lead">
+            <em>Carved in Jade</em> approaches identity through the practice of carving — shaped as much by what is
+            removed as by what remains.
+          </p>
+          <p class="fx-body-text">Drawing from jade's cultural significance in Japanese tradition and its associations
+            with purity, protection, and quiet strength, the look moves between restraint and revelation. A structured
+            high neckline gives way to sheer tulle sleeves traced with lace appliqué and sequins, opening into a bare
+            back that allows the body to become part of the composition. The lacework echoes the precision of carved
+            jade, where negative space defines the form.</p>
+          <p class="fx-body-text">In dialogue with The Mirror Stage, the piece reflects a lush season of becoming.
+            Modest yet striking. Covered yet exposed. Raw yet refined.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CYCLING PHOTO + CONSTRUCTION TEXT ===== -->
+    <section class="fx-construction">
+      <div class="fx-construction-inner">
+
+        <!-- Cycling photos -->
+        <div class="fx-cycler" id="fxCycler">
+          <div class="fx-cycler-track" id="fxCyclerTrack">
+            <div class="fx-cycler-slide"><img src="assets/jade3.jpg" alt="Lace detail" class="fx-cycler-img"></div>
+            <div class="fx-cycler-slide"><img src="assets/jadeoutside.jpg" alt="Outdoor — full look"
+                class="fx-cycler-img"></div>
+            <div class="fx-cycler-slide"><img src="assets/jadeoutside1.jpg" alt="Outdoor — editorial"
+                class="fx-cycler-img"></div>
+            <div class="fx-cycler-slide"><img src="assets/jade1.jpg" alt="High neckline" class="fx-cycler-img"></div>
+          </div>
+          <div class="fx-cycler-dots" id="fxCyclerDots"></div>
+        </div>
+
+        <!-- Construction text -->
+        <div class="fx-construction-text">
+          <span class="fx-section-tag">Construction</span>
+          <p class="fx-construction-body">The look is built around a structured high neckline that transitions into
+            sheer tulle sleeves, traced with lace appliqué and sequins. The lace is the garment's language — precise,
+            patterned, and negative. Where the fabric opens into a bare back, the body becomes compositional. Each
+            decision about what to leave uncovered mirrors the logic of carving: the material removed is as deliberate
+            as the material kept.</p>
+          <p class="fx-construction-details">
+            <span>Velvet body · sheer tulle sleeves · lace appliqué · sequin detail · open back · structured
+              neckline</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===== SECTION DIVIDER ===== -->
+    <div class="fx-look-divider"></div>
+
+    <!-- ===== PORCELAIN IN MOTION — SECTION HEADER ===== -->
+    <section class="fx-collection-header">
+      <div class="fx-collection-header-inner">
+        <span class="fx-section-tag">2025 — Metamorphosis</span>
+        <h2 class="fx-collection-name"><em>Porcelain in Motion</em></h2>
+      </div>
+    </section>
+
+    <!-- ===== THE LOOK — VIDEO + PHOTO ===== -->
+    <section class="fx-look fx-look--porcelain">
+      <div class="fx-look-inner">
+
+        <!-- Left: runway video -->
+        <div class="fx-look-main fx-look-main--video">
+          <video src="assets/porcelainvid.mp4" autoplay muted loop playsinline class="fx-look-video"></video>
+        </div>
+
+        <!-- Right: stacked photos -->
+        <div class="fx-look-side">
+          <div class="fx-look-side-img-wrap">
+            <img src="assets/fashion-show-1.jpg" alt="Porcelain in Motion — runway" class="fx-look-side-img">
+          </div>
+          <div class="fx-look-side-img-wrap">
+            <img src="assets/porcelain2.jpg" alt="Porcelain in Motion — atmosphere" class="fx-look-side-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== THEME + DESIGN TEXT ===== -->
+    <section class="fx-text">
+      <div class="fx-text-inner">
+
+        <div class="fx-text-col">
+          <span class="fx-section-tag">The Theme</span>
+          <blockquote class="fx-quote">"Metamorphosis"</blockquote>
+          <p class="fx-body-text">FashionX 2025 explored transformation — from history and tradition to a speculative
+            future. Designers worked in algae, aluminium, peacock feathers, 3D-printed plastic, and mirror shards. The
+            show opened with a live string orchestra tuning, before a Space Odyssey-inspired trumpet solo carried the
+            audience into a soundscape built for metamorphosis.</p>
+        </div>
+
+        <div class="fx-text-col">
+          <span class="fx-section-tag">The Look</span>
+          <p class="fx-body-text fx-body-text--lead">
+            <em>Porcelain in Motion</em> translates the fragile into the enduring — traditional Chinese porcelain
+            motifs remade in the language of American workwear.
+          </p>
+          <p class="fx-body-text">Canvas pants carry intricate felt appliqués drawn from decorative pottery patterns.
+            A structured denim bodice brings rigidity and utility to forms usually associated with delicacy. The garment
+            traces the evolution of cultural craftsmanship: what once shattered now holds its ground.</p>
+          <p class="fx-body-text">Fragile to enduring. Decorative to functional. Eastern tradition through a Western
+            lens.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CYCLING PHOTO + CONSTRUCTION TEXT ===== -->
+    <section class="fx-construction">
+      <div class="fx-construction-inner">
+
+        <!-- Cycling photos -->
+        <div class="fx-cycler" id="fxCycler2">
+          <div class="fx-cycler-track" id="fxCyclerTrack2">
+            <div class="fx-cycler-slide"><img src="assets/porcelain3.jpg" alt="Appliqué detail" class="fx-cycler-img">
+            </div>
+            <div class="fx-cycler-slide"><img src="assets/porcelain4.jpg" alt="Denim bodice detail"
+                class="fx-cycler-img"></div>
+          </div>
+          <div class="fx-cycler-dots" id="fxCyclerDots2"></div>
+        </div>
+
+        <!-- Construction text -->
+        <div class="fx-construction-text">
+          <span class="fx-section-tag">Construction</span>
+          <p class="fx-construction-body">The look is built in two parts: wide-leg canvas pants covered in
+            hand-applied felt appliqués — each one cut and placed to echo the intricate glaze work of Chinese
+            blue-and-white porcelain — and a structured denim bodice that sits in contrast to the softness it frames.
+            The appliqué work is the garment's core argument: that ornamentation and durability are not opposites,
+            but partners.</p>
+          <p class="fx-construction-details">
+            <span>Canvas pants · felt appliqué · structured denim bodice · hand-applied motifs · workwear
+              silhouette</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CLOSING STATEMENT ===== -->
+    <section class="fx-closing">
+      <div class="fx-closing-inner">
+        <p class="fx-closing-text">Studying how clothing is made is how I first understood it as a language —
+          and these shows are where I learned to say something with it.</p>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER NAV ===== -->
+    <section class="fx-footer-nav">
+      <div class="fx-footer-nav-inner">
+        <a href="index.html?nosplash=1#work" class="fx-nav-link fx-nav-link--back">
+          <span class="fx-nav-arrow">←</span>
+          <span>Back to work</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="project-cursor.js"></script>
+  <script>
+    // ===== PHOTO CYCLER (reusable) =====
+    function makeCycler(trackId, dotsId) {
+      const track = document.getElementById(trackId);
+      const dotsContainer = document.getElementById(dotsId);
+      const slides = track ? track.querySelectorAll('.fx-cycler-slide') : [];
+      const total = slides.length;
+      if (!total) return;
+
+      let current = 0;
+      let timer = null;
+      const INTERVAL = 3800;
+
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'fx-cycler-dot';
+        dot.setAttribute('aria-label', `Photo ${i + 1}`);
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = dotsContainer.querySelectorAll('.fx-cycler-dot');
+
+      function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+        resetTimer();
+      }
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => goTo(current + 1), INTERVAL);
+      }
+
+      let touchX = 0;
+      track.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', e => {
+        const d = touchX - e.changedTouches[0].clientX;
+        if (Math.abs(d) > 40) goTo(current + (d > 0 ? 1 : -1));
+      });
+
+      goTo(0);
+    }
+
+    makeCycler('fxCyclerTrack', 'fxCyclerDots');      // Carved in Jade
+    makeCycler('fxCyclerTrack2', 'fxCyclerDots2');    // Porcelain in Motion
+  </script>
+
+</body>
+
+</html>

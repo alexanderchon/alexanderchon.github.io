@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Chon</title>
+  <meta name="description"
+    content="Alexander Chon — Stanford student interested in how clothing moves through culture.">
+  <!-- Adobe Fonts (Desire Pro + Capitana) -->
+  <link rel="icon" type="image/jpeg" href="assets/A.jpg">
+  <link rel="stylesheet" href="https://use.typekit.net/mcn5ibk.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Custom cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ===== SPLASH SCREEN ===== -->
+  <div id="splash">
+    <div class="splash-content">
+      <p class="splash-top" id="splashTop">My mom used to dress me.</p>
+      <div class="splash-img-wrap" id="splashImg">
+        <img src="assets/baby-photo.jpg" alt="Baby Alexander" onerror="this.parentElement.classList.add('no-img')">
+      </div>
+      <p class="splash-bottom" id="splashBottom">
+        The moment she stopped, I became<br>fascinated by why any of us wear what we do.
+      </p>
+    </div>
+    <p class="splash-hint" id="splashHint">click anywhere to continue</p>
+  </div>
+
+  <!-- ===== MAIN SITE ===== -->
+  <div id="site">
+
+    <header id="header">
+      <a href="#home" class="logo">Alexander Chon</a>
+      <nav>
+        <a href="about.html">about</a>
+        <a href="#work">work</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <div class="hero-left-inner reveal-stagger">
+          <p class="intro-line">Hi, I'm Alex.</p>
+        </div>
+      </div>
+
+      <div class="hero-center">
+        <div class="hero-photo-wrap reveal">
+          <img src="assets/profile1.jpg" alt="Alexander Chon" class="hero-photo" onerror="this.style.display='none'">
+          <div class="photo-placeholder-text">[ profile1.jpg ]</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <p class="hero-statement reveal"> Fashion, to me, is culture in motion. I’m interested in how clothing carries
+          history, signals identity, and evolves with the people who wear it.</p>
+      </div>
+    </section>
+
+    <!-- STORY / ABOUT -->
+    <section class="story-section" id="about">
+      <div class="story-display">
+
+        <div class="story-text-panel">
+          <div class="story-chapters">
+            <div class="story-chapter active">
+              <!-- <p class="chapter-tag">Design</p> -->
+              <h2 class="chapter-headline">I've designed<br>garments.</h2>
+              <p class="chapter-body">I learned to understand clothing by first learning how it’s made.</p>
+            </div>
+            <div class="story-chapter">
+              <!--<p class="chapter-tag">Biodesign</p> -->
+              <h2 class="chapter-headline">Built a startup<br>showcased at MoMA.</h2>
+              <p class="chapter-body">Kerra asked whether the future of textiles could feel more alive, natural, and
+                connected to the world around us.</p>
+            </div>
+            <div class="story-chapter">
+              <!-- <p class="chapter-tag">Industry</p>-->
+              <h2 class="chapter-headline">Worked inside<br>LVMH.</h2>
+              <p class="chapter-body">At Kendo, I learned how scale shapes taste, storytelling, and perception.</p>
+            </div>
+            <div class="story-chapter">
+              <!-- <p class="chapter-tag">Circularity</p>-->
+              <h2 class="chapter-headline">Launched a<br>secondhand marketplace.</h2>
+              <p class="chapter-body">TreeRacks changed how I think about value, taste, and permanence.</p>
+            </div>
+            <div class="story-chapter">
+              <!-- <p class="chapter-tag">The question</p>-->
+              <h2 class="chapter-headline">Together, they taught me to see fashion as a living cultural system.</h2>
+              <a href="#work" class="chapter-link">Explore the work <span class="chapter-link-arrow">→</span></a>
+            </div>
+          </div>
+
+          <div class="story-footer">
+            <div class="story-counter">
+              <span class="counter-num">01</span><span class="counter-denom"> / 05</span>
+            </div>
+            <div class="story-progress-track">
+              <div class="story-progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-image-panel">
+          <img class="story-img active" src="assets/fashion-show-1.jpg" alt="Fashion design">
+          <img class="story-img" src="assets/kerra-presentation.jpg" alt="Kerra at MoMA">
+          <img class="story-img" src="assets/kendo-lvmh.jpg" alt="Kendo LVMH">
+          <img class="story-img" src="assets/treeracks.jpg" alt="TreeRacks">
+          <img class="story-img" src="assets/fashion-show-2.jpg" alt="Fashion show">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work-section" id="work">
+      <div class="work-header reveal">
+        <span class="work-label">Selected Work</span>
+      </div>
+      <div class="work-mosaic">
+
+        <a href="fashionx.html" class="work-item work-item--fashionx">
+          <video class="work-item-img" autoplay muted loop playsinline>
+            <source src="assets/jadevid.mov" type="video/mp4">
+          </video>
+          <div class="work-item-overlay">
+            <span class="work-item-role">Designer</span>
+            <h3 class="work-item-title">FashionX Runway</h3>
+            <span class="work-item-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="kerra.html" class="work-item work-item--kerra">
+          <video class="work-item-img" autoplay muted loop playsinline>
+            <source src="assets/kerra.mp4" type="video/mp4">
+          </video>
+          <div class="work-item-overlay">
+            <span class="work-item-role">Co-founder</span>
+            <h3 class="work-item-title">Kerra</h3>
+            <span class="work-item-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="kendo.html" class="work-item work-item--kendo">
+          <img src="assets/kendo-lvmh.jpg" alt="Kendo / LVMH" class="work-item-img">
+          <div class="work-item-overlay">
+            <span class="work-item-role">Supply Chain Data Analyst</span>
+            <h3 class="work-item-title">Kendo / LVMH</h3>
+            <span class="work-item-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="treeracks.html" class="work-item work-item--treeracks">
+          <img src="assets/treerackswork.jpg" alt="TreeRacks" class="work-item-img">
+          <div class="work-item-overlay">
+            <span class="work-item-role">Founder</span>
+            <h3 class="work-item-title">TreeRacks</h3>
+            <span class="work-item-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="makery.html" class="work-item work-item--makery">
+          <img src="assets/makerywork.jpg" alt="Stanford GSE Makery" class="work-item-img">
+          <div class="work-item-overlay">
+            <span class="work-item-role">Makery Mentor</span>
+            <h3 class="work-item-title">Stanford GSE Makery</h3>
+            <span class="work-item-arrow">→</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section reveal" id="contact">
+      <p class="contact-eyebrow">Contact</p>
+      <h2 class="contact-headline">Say hello.</h2>
+      <div class="contact-links">
+        <a href="mailto:chon@stanford.edu" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">chon@stanford.edu</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/alexander-chon/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-value">alexander-chon</span>
+          <span class="contact-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </div><!-- end #site -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

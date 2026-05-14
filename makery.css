@@ -1,0 +1,346 @@
+/* ===== MAKERY PROJECT PAGE ===== */
+/* Inherits base tokens from style.css */
+
+#mk-main {
+  padding-top: 56px;
+}
+
+/* ===== UTILITY ===== */
+.mk-section-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--dim);
+  font-weight: 300;
+  display: block;
+}
+
+/* ===== HERO ===== */
+.mk-hero {
+  position: relative;
+  height: calc(100vh - 56px);
+  min-height: 580px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.mk-hero-img-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.mk-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.mk-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(8,8,8,0.9) 0%, rgba(8,8,8,0.35) 45%, rgba(8,8,8,0.1) 100%),
+    linear-gradient(to right, rgba(8,8,8,0.25) 0%, transparent 55%);
+}
+
+.mk-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 3.5rem 4rem;
+}
+
+.mk-hero-title {
+  font-family: var(--font-body);
+  font-size: clamp(4.7rem, 11.5vw, 10.7rem);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--white);
+}
+
+.mk-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  right: 3.5rem;
+  z-index: 2;
+  color: rgba(245, 244, 240, 0.3);
+  font-size: 1.1rem;
+  animation: mk-bob 2.4s ease-in-out infinite;
+}
+
+@keyframes mk-bob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+/* ===== INTRO ===== */
+.mk-intro {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 5rem 3.5rem;
+}
+
+.mk-intro-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mk-intro-lead {
+  font-family: var(--font-body);
+  font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  color: var(--white);
+}
+
+.mk-intro-sub {
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.3vw, 1.08rem);
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--dim);
+}
+
+/* ===== SPLIT — IMAGE + TEXT ===== */
+.mk-split {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 0 3.5rem;
+}
+
+.mk-split-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  align-items: start;
+}
+
+.mk-split-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mk-split-img-wrap {
+  overflow: hidden;
+  background: #0a0a0a;
+  aspect-ratio: 4/3;
+}
+
+.mk-split-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mk-split-img-wrap:hover .mk-split-img {
+  transform: scale(1.03);
+}
+
+.mk-split-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  justify-content: center;
+  padding: 3.5rem 3.5rem;
+}
+
+.mk-body-lead {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.65vw, 1.3rem);
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: -0.012em;
+  color: var(--white);
+}
+
+.mk-body {
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.3vw, 1.05rem);
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--dim);
+}
+
+/* ===== WORKSHOPS ===== */
+.mk-workshops {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 0 3.5rem;
+}
+
+.mk-workshops-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  align-items: start;
+}
+
+.mk-workshops-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  justify-content: center;
+  padding: 3.5rem 3.5rem 3.5rem 0;
+}
+
+.mk-workshops-title {
+  font-family: var(--font-body);
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+
+.mk-workshops-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mk-workshops-img-wrap {
+  overflow: hidden;
+  background: #0a0a0a;
+  aspect-ratio: 3/2;
+}
+
+.mk-workshops-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mk-workshops-img-wrap:hover .mk-workshops-img {
+  transform: scale(1.03);
+}
+
+/* ===== CLOSING ===== */
+.mk-closing {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 6rem 3.5rem;
+}
+
+.mk-closing-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.mk-closing-text {
+  font-family: var(--font-body);
+  font-size: clamp(1.3rem, 2.4vw, 2.2rem);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.018em;
+  color: var(--dim);
+}
+
+/* ===== FOOTER NAV ===== */
+.mk-footer-nav {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 3.5rem 3.5rem 5rem;
+}
+
+.mk-footer-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mk-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+  text-decoration: none;
+  transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.mk-nav-link:hover {
+  color: var(--white);
+  gap: 1rem;
+}
+
+.mk-nav-arrow {
+  transition: transform 0.25s ease;
+}
+
+.mk-nav-link:hover .mk-nav-arrow {
+  transform: translateX(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .mk-split-inner,
+  .mk-workshops-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .mk-split-imgs {
+    flex-direction: row;
+  }
+
+  .mk-split-text {
+    padding: 4rem 2rem;
+  }
+
+  .mk-workshops-text {
+    padding: 4rem 2rem 2rem;
+  }
+
+  .mk-workshops-imgs {
+    flex-direction: row;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .mk-hero-content {
+    padding: 0 1.5rem 3rem;
+  }
+
+  .mk-intro,
+  .mk-closing,
+  .mk-footer-nav {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .mk-split,
+  .mk-workshops {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mk-split-text {
+    padding: 3rem 1.5rem;
+  }
+
+  .mk-workshops-text {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .mk-workshops-imgs {
+    flex-direction: column;
+  }
+
+  .mk-scroll-hint {
+    right: 1.5rem;
+  }
+}

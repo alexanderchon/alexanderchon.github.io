@@ -1,0 +1,311 @@
+/* ===== KENDO / LVMH PROJECT PAGE ===== */
+/* Inherits base tokens from style.css */
+
+#kd-main {
+  padding-top: 56px;
+}
+
+/* ===== UTILITY ===== */
+.kd-section-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--dim);
+  font-weight: 300;
+  display: block;
+}
+
+/* ===== HERO ===== */
+.kd-hero {
+  position: relative;
+  height: calc(100vh - 56px);
+  min-height: 580px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.kd-hero-img-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.kd-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.kd-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(8,8,8,0.92) 0%, rgba(8,8,8,0.4) 45%, rgba(8,8,8,0.15) 100%),
+    linear-gradient(to right, rgba(8,8,8,0.3) 0%, transparent 55%);
+}
+
+.kd-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 3.5rem 4rem;
+}
+
+.kd-hero-title {
+  font-family: var(--font-body);
+  font-size: clamp(4.7rem, 11.5vw, 10.7rem);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--white);
+}
+
+.kd-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  right: 3.5rem;
+  z-index: 2;
+  color: rgba(245, 244, 240, 0.3);
+  font-size: 1.1rem;
+  animation: kd-bob 2.4s ease-in-out infinite;
+}
+
+@keyframes kd-bob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+/* ===== INTRO ===== */
+.kd-intro {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 5rem 3.5rem;
+}
+
+.kd-intro-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.kd-intro-lead {
+  font-family: var(--font-body);
+  font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  color: var(--white);
+}
+
+.kd-intro-sub {
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.3vw, 1.08rem);
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--dim);
+}
+
+/* ===== SPLIT — TEXT + IMAGE ===== */
+.kd-split {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 0 3.5rem;
+}
+
+.kd-split-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  align-items: start;
+}
+
+.kd-split-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 3.5rem 3.5rem 3.5rem 0;
+}
+
+.kd-body-lead {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.65vw, 1.3rem);
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: -0.012em;
+  color: var(--white);
+}
+
+.kd-body {
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.3vw, 1.05rem);
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--dim);
+}
+
+.kd-split-img-wrap {
+  overflow: hidden;
+  background: #0a0a0a;
+  aspect-ratio: 3/4;
+}
+
+.kd-split-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.kd-split-img-wrap:hover .kd-split-img {
+  transform: scale(1.03);
+}
+
+/* ===== OBSERVATIONS ===== */
+.kd-observations {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 7rem 3.5rem;
+}
+
+.kd-observations-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.kd-observations-quote {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.kd-quote {
+  font-family: var(--font-body);
+  font-size: clamp(1.5rem, 2.6vw, 2.4rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--white);
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kd-observations-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding-top: 2.6rem;
+}
+
+/* ===== CLOSING ===== */
+.kd-closing {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 6rem 3.5rem;
+}
+
+.kd-closing-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.kd-closing-text {
+  font-family: var(--font-body);
+  font-size: clamp(1.3rem, 2.4vw, 2.2rem);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.018em;
+  color: var(--dim);
+}
+
+/* ===== FOOTER NAV ===== */
+.kd-footer-nav {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 3.5rem 3.5rem 5rem;
+}
+
+.kd-footer-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.kd-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+  text-decoration: none;
+  transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.kd-nav-link:hover {
+  color: var(--white);
+  gap: 1rem;
+}
+
+.kd-nav-arrow {
+  transition: transform 0.25s ease;
+}
+
+.kd-nav-link:hover .kd-nav-arrow {
+  transform: translateX(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .kd-split-inner,
+  .kd-observations-inner {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .kd-split-text {
+    padding: 3.5rem 0 2rem;
+  }
+
+  .kd-split-img-wrap {
+    aspect-ratio: 4/3;
+  }
+
+  .kd-observations-text {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .kd-hero-content {
+    padding: 0 1.5rem 3rem;
+  }
+
+  .kd-intro,
+  .kd-observations,
+  .kd-closing,
+  .kd-footer-nav {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .kd-split {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .kd-split-text {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .kd-scroll-hint {
+    right: 1.5rem;
+  }
+}

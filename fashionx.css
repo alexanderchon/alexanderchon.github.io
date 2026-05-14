@@ -1,0 +1,569 @@
+/* ===== FASHIONX PROJECT PAGE ===== */
+/* Inherits base tokens from style.css */
+
+#fx-main {
+  padding-top: 56px;
+}
+
+/* ===== UTILITY ===== */
+.fx-section-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--dim);
+  font-weight: 300;
+  display: block;
+}
+
+/* ===== HERO ===== */
+.fx-hero {
+  position: relative;
+  height: calc(100vh - 56px);
+  min-height: 580px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.fx-hero-img-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.fx-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.fx-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(8,8,8,0.9) 0%, rgba(8,8,8,0.35) 45%, rgba(8,8,8,0.1) 100%),
+    linear-gradient(to right, rgba(8,8,8,0.25) 0%, transparent 55%);
+}
+
+.fx-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 3.5rem 4rem;
+}
+
+.fx-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.fx-eyebrow {
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245, 244, 240, 0.5);
+  font-weight: 300;
+}
+
+.fx-eyebrow-divider {
+  color: rgba(245, 244, 240, 0.2);
+}
+
+.fx-hero-title {
+  font-family: var(--font-body);
+  font-size: clamp(4.7rem, 11.5vw, 10.7rem);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--white);
+}
+
+.fx-hero-title em {
+  font-style: italic;
+  opacity: 0.55;
+}
+
+/* FashionX word in title — italic, light grey */
+.fx-hero-title-em {
+  font-style: italic;
+  color: rgba(245, 244, 240, 0.45);
+  opacity: 1 !important;
+}
+
+.fx-scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  right: 3.5rem;
+  z-index: 2;
+  color: rgba(245, 244, 240, 0.3);
+  font-size: 1.1rem;
+  animation: fx-bob 2.4s ease-in-out infinite;
+}
+
+@keyframes fx-bob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+
+/* ===== ABOUT FASHIONX ===== */
+.fx-about {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 6rem 3.5rem 7rem;
+}
+
+.fx-about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.fx-about-top {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.fx-about-logo {
+  height: 200px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.fx-about-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Logo sits inline with the lead blurb */
+.fx-about-lead-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.fx-about-lead-row .fx-about-lead {
+  max-width: 680px;
+}
+
+.fx-about-lead-row .fx-about-logo {
+  align-self: center;
+}
+
+
+.fx-about-lead {
+  font-family: var(--font-body);
+  font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  color: var(--white);
+}
+
+.fx-about-sub {
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.3vw, 1.08rem);
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--dim);
+  max-width: 680px;
+}
+
+/* ===== COLLECTION HEADER ===== */
+.fx-collection-header {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 5rem 3.5rem 4rem;
+}
+
+.fx-collection-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.fx-collection-name {
+  font-family: var(--font-body);
+  font-size: clamp(3.5rem, 7.5vw, 7rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--white);
+}
+
+.fx-collection-name em {
+  font-style: italic;
+}
+
+/* ===== THE LOOK — PHOTO GRID ===== */
+.fx-look {
+  padding: 0 3.5rem;
+}
+
+.fx-look-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3px;
+}
+
+.fx-look-main {
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.fx-look-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 3/4;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fx-look-main:hover .fx-look-main-img {
+  transform: scale(1.03);
+}
+
+/* Video variant */
+.fx-look-main--video {
+  aspect-ratio: 9/16;
+}
+
+.fx-look-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fx-look-side {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.fx-look-side-img-wrap {
+  overflow: hidden;
+  background: #0a0a0a;
+  flex: 1;
+}
+
+.fx-look-side-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  aspect-ratio: 4/3;
+}
+
+.fx-look-side-img-wrap:hover .fx-look-side-img {
+  transform: scale(1.03);
+}
+
+/* Bottom slot: anchor to bottom so legs aren't cropped */
+.fx-look--jade .fx-look-side-img-wrap:last-child .fx-look-side-img {
+  object-position: center bottom;
+}
+
+/* Top slot: shift anchor down so empty space above head is reduced */
+.fx-look--jade .fx-look-side-img-wrap:first-child .fx-look-side-img {
+  object-position: center 25%;
+}
+
+/* Porcelain — bottom slot: subject is low in frame, anchor to bottom */
+.fx-look--porcelain .fx-look-side-img-wrap:last-child .fx-look-side-img {
+  object-position: center bottom;
+}
+
+/* ===== LOOK DIVIDER ===== */
+.fx-look-divider {
+  height: 1px;
+  background: rgba(245, 244, 240, 0.08);
+  margin: 0;
+}
+
+/* ===== TEXT SECTION ===== */
+.fx-text {
+  padding: 7rem 3.5rem;
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  margin-top: 3px;
+}
+
+.fx-text-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.fx-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.fx-quote {
+  font-family: var(--font-body);
+  font-size: clamp(1.6rem, 2.8vw, 2.6rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--white);
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fx-body-text {
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.3vw, 1.05rem);
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--dim);
+}
+
+.fx-body-text--lead {
+  font-size: clamp(1.05rem, 1.65vw, 1.3rem);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.fx-body-text em {
+  font-style: italic;
+}
+
+/* ===== CYCLING PHOTOS + CONSTRUCTION ===== */
+.fx-construction {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 7rem 3.5rem;
+}
+
+.fx-construction-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+/* Cycler */
+.fx-cycler {
+  position: relative;
+  overflow: hidden;
+  background: #0a0a0a;
+  border-radius: 2px;
+  aspect-ratio: 3/4;
+}
+
+.fx-cycler-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.fx-cycler-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fx-cycler-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.fx-cycler-dots {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.45rem;
+  z-index: 10;
+}
+
+.fx-cycler-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(245, 244, 240, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.fx-cycler-dot.active {
+  background: rgba(245, 244, 240, 0.9);
+  transform: scale(1.4);
+}
+
+/* Construction text */
+.fx-construction-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.fx-construction-body {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--dim);
+  margin-top: 1.2rem;
+}
+
+.fx-construction-details {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(245, 244, 240, 0.22);
+  line-height: 2;
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding-top: 1.4rem;
+}
+
+/* ===== CLOSING ===== */
+.fx-closing {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 8rem 3.5rem;
+}
+
+.fx-closing-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.fx-closing-text {
+  font-family: var(--font-body);
+  font-size: clamp(1.3rem, 2.4vw, 2.2rem);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -0.018em;
+  color: var(--dim);
+}
+
+/* ===== FOOTER NAV ===== */
+.fx-footer-nav {
+  border-top: 1px solid rgba(245, 244, 240, 0.07);
+  padding: 3.5rem 3.5rem 5rem;
+}
+
+.fx-footer-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fx-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dim);
+  text-decoration: none;
+  transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.fx-nav-link:hover {
+  color: var(--white);
+}
+
+.fx-nav-link--back:hover {
+  gap: 1rem;
+}
+
+.fx-nav-arrow {
+  transition: transform 0.25s ease;
+}
+
+.fx-nav-link--back:hover .fx-nav-arrow {
+  transform: translateX(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .fx-text-inner,
+  .fx-construction-inner {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .fx-cycler {
+    aspect-ratio: 4/3;
+  }
+
+  .fx-look-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .fx-look-side {
+    flex-direction: row;
+  }
+
+  .fx-look-side-img {
+    aspect-ratio: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .fx-hero-content {
+    padding: 0 1.5rem 3rem;
+  }
+
+  .fx-about,
+  .fx-collection-header,
+  .fx-text,
+  .fx-construction,
+  .fx-closing,
+  .fx-footer-nav {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .fx-look {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .fx-look-inner {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .fx-look-side {
+    flex-direction: row;
+  }
+
+  .fx-scroll-hint {
+    right: 1.5rem;
+  }
+
+  .fx-about-lead-row {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
