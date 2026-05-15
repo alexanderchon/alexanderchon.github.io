@@ -167,7 +167,8 @@
 
 .tr-narrative-aside {
   position: sticky;
-  top: calc(56px + 2rem);
+  top: 50vh;
+  transform: translateY(-50%);
 }
 
 .tr-poster {
@@ -448,7 +449,7 @@
   font-size: 0.65rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--dimmer);
+  color: var(--dim);
   margin-bottom: 4rem;
 }
 
