@@ -967,16 +967,27 @@ body.cursor-click #cursor-ring {
     text-align: center;
   }
 
-  /* Story section — text only on mobile, hide image panel */
+  /* Story section — image fills background, text overlaid */
   .story-display {
     grid-template-columns: 1fr;
+    position: relative;
   }
 
   .story-image-panel {
-    display: none;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .story-image-panel::before {
+    background: rgba(8, 8, 8, 0.55);
   }
 
   .story-text-panel {
+    position: relative;
+    z-index: 1;
+    background: transparent;
     padding: calc(56px + 2rem) 1.5rem 2rem;
   }
 
