@@ -970,7 +970,6 @@ body.cursor-click #cursor-ring {
   /* Story section — image fills background, text overlaid */
   .story-display {
     grid-template-columns: 1fr;
-    position: relative;
   }
 
   .story-image-panel {
