@@ -396,6 +396,9 @@ nav a.nav-active {
 
 /* ===== FOOTER CTA ===== */
 .about-footer-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 4rem 3.5rem 6rem;
   max-width: 1100px;
   margin: 0 auto;
@@ -427,6 +430,10 @@ nav a.nav-active {
 
 .cta-link:hover .cta-arrow {
   transform: translateX(-4px);
+}
+
+.cta-link:last-child:hover .cta-arrow {
+  transform: translateX(4px);
 }
 
 /* ===== REVEAL OVERRIDES for about page ===== */
